@@ -1,0 +1,19 @@
+{
+	"name": "es6-app",
+	"version": "1.0",
+	"description": "Application created during Rocketseat course about ES6+",
+	"main": "index.js",
+	"repository": "https://github.com/samdasil/es6-app.git",
+	"author": "Sammy Silva <silvasammy@outlook.com>",
+	"license": "MIT",
+	"dependencies": {
+		"@babel/cli": "^7.10.5",
+		"@babel/core": "^7.11.4",
+		"@babel/plugin-proposal-class-properties": "^7.10.4",
+		"@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+		"@babel/preset-env": "^7.11.0"
+	},
+	"scripts": {
+		"dev": "babel ./main.js -o ./bundle.js -w"
+	}
+}
