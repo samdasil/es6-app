@@ -20,7 +20,7 @@ console.log(User1.isAdmin()) // false
 console.log(Adm1.isAdmin()) // true
 ```
 
-- [ ]  2º Exercício
+- [x]  2º Exercício
 
 _A partir do seguinte vetor e utilizando os métodos de array (map, reduce, filter e find):_
 
@@ -31,7 +31,7 @@ const usuarios = [
  { nome: 'Lucas', idade: 30, empresa: 'Facebook' },
 ];
 ```
-- [ ]  2.1 Utilizando o map
+- [x]  2.1 Utilizando o map
 
 _Crie uma variável que contenha todas idades dos usuários: [23, 15, 30]_
 
@@ -201,4 +201,4 @@ const usuario = {
 ```
 
 
-_Formatação do README.md baseada nas dicas encontradas em: [Medium](https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8)
+_Formatação do README.md baseada nas dicas encontradas em:_ [Medium](https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8)
