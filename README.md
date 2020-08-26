@@ -142,7 +142,7 @@ return `${nome} tem ${idade} anos.`;
 
 _Utilizando o operador de rest/spread (...) realize as seguintes operações:_
 
-- [ ]  5.1 Rest
+- [x]  5.1 Rest
 
 _A partir do array: const arr = [1, 2, 3, 4, 5, 6], defina uma variável x que recebe a primeira posição do vetor e outra variável y que recebe todo restante dos dados._
 
@@ -158,7 +158,7 @@ console.log(soma(1, 2, 3, 4, 5, 6)); // 21
 console.log(soma(1, 2)); // 3
 ```
 
-- [ ]  5.2 Spread
+- [x]  5.2 Spread
 
 _A partir do objeto e utilizando o operador spread:_
 
@@ -176,7 +176,7 @@ const usuario = {
 _Crie uma variável usuario2 que contenha todos os dados do usuário porém com nome Gabriel._
 _Crie uma variável usuario3 que contenha todos os dados do usuário porém com cidade Lontras._
 
-- [ ]  6º Exercício
+- [x]  6º Exercício
 
 _Converta o seguinte trecho de código utilizando Template Literals:_
 

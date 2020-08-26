@@ -1,9 +1,7 @@
-"use strict";
-
 // exercicio 6
-
 /* Converta o seguinte trecho de código utilizando Template Literals: */
-var usuario = 'Diego';
-var idade = 23;
+
+const usuario = 'Diego';
+const idade = 23;
 console.log('O usuário ' + usuario + ' possui ' + idade + ' anos');
-console.log("O usu\xE1rio ".concat(usuario, " possui ").concat(idade, " anos"));
+console.log(`O usuário ${usuario} possui ${idade} anos`);
