@@ -35,15 +35,15 @@ const usuarios = [
 
 _Crie uma variável que contenha todas idades dos usuários: [23, 15, 30]_
 
-- [ ]  2.2 Utilizando o filter
+- [x]  2.2 Utilizando o filter
 
 _Crie uma variáveis que tenha apenas os usuários que trabalham na Rocketseat e com mais de 18 anos: [{ nome: 'Diego', idade: 23, empresa: 'Rocketseat' }]_
 
-- [ ]  2.3 Utilizando o find
+- [x]  2.3 Utilizando o find
 
 _Crie uma variável que procura por um usuário que trabalhe na empresa Google: undefined_
 
-- [ ]  2.4 Unindo operações
+- [x]  2.4 Unindo operações
 
 _Multiplique a idade de todos usuários por dois e depois realize um filtro nos usuários que possuem no máximo 50 anos:_
 
@@ -55,7 +55,7 @@ _Multiplique a idade de todos usuários por dois e depois realize um filtro nos 
 ]
 ```
 
-- [ ]  3º Exercício
+- [x]  3º Exercício
 
 _Converta as funções nos seguintes trechos de código em Arrow Functions:_
 
@@ -98,9 +98,9 @@ const promise = function() {
 }
 ```
 
-- [ ]  4º Exercício
+- [x]  4º Exercício
 
-- [ ]  4.1 Desestruturação simples
+- [x]  4.1 Desestruturação simples
 
 _A partir do seguinte objeto:_
 
@@ -122,7 +122,7 @@ console.log(cidade); // Rio do Sul
 console.log(estado); // SC
 ```
 
-- [ ]  4.2 Desestruturação em parâmetros
+- [x]  4.2 Desestruturação em parâmetros
 
 _Na seguinte função:_
 
