@@ -138,7 +138,7 @@ _Utilize a desestruturação nos parâmetros da função para buscar o nome e id
 return `${nome} tem ${idade} anos.`;
 ```
 
-- [ ]  5º Exercício
+- [x]  5º Exercício
 
 _Utilizando o operador de rest/spread (...) realize as seguintes operações:_
 

@@ -1,34 +1,63 @@
 "use strict";
 
-// exercicio 4.1
-var empresa = {
-  nome: 'Rocketseat',
-  endereco: {
-    cidade: 'Rio do Sul',
-    estado: 'SC'
-  }
-}; //desestruturacao simples
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-var nome = empresa.nome,
-    cidade = empresa.endereco.cidade,
-    estado = empresa.endereco.estado;
-console.log(nome);
-console.log(cidade);
-console.log(estado); // exercicio 4.2
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+// exercicio 5
+
+/* 
+    Utilizando o operador de rest/spread (...) realize as seguintes opera��es:
+*/
+// exercicio 5.1
+
+/*
+    A partir do array: const arr = [1, 2, 3, 4, 5, 6], defina uma vari�vel x que recebe a primeira
+    posi��o do vetor e outra vari�vel y que recebe todo restante dos dados.
+*/
+var arr = [1, 2, 3, 4, 5, 6];
+var x = arr[0],
+    y = arr.slice(1);
+console.log(x);
+console.log(y);
+
+var somaTudo = function somaTudo() {
+  for (var _len = arguments.length, params = new Array(_len), _key = 0; _key < _len; _key++) {
+    params[_key] = arguments[_key];
+  }
+
+  return params.reduce(function (total, next) {
+    return total + next;
+  });
+};
+
+console.log(somaTudo(1, 2, 3, 10)); // exercicio 5.2
+
+/* Crie uma vari�vel usuario2 que contenha todos os dados do usu�rio por�m com nome Gabriel. */
 
 var usuario = {
-  nome: 'Sammy',
-  idade: 30
-}; // function mostraInfo(usuario) {
-//     return `${usuario.nome} tem ${usuario.idade} anos.`;
-// }
-// mostraInfo({ nome: 'Diego', idade: 23 })
-// desestrutura��o em par�metros
+  nome: 'Diego',
+  idade: 23,
+  endereco: {
+    cidade: 'Rio do Sul',
+    uf: 'SC',
+    pais: 'Brasil'
+  }
+};
 
-function mostraInfo(_ref) {
-  var nome = _ref.nome,
-      idade = _ref.idade;
-  return "".concat(nome, " tem ").concat(idade, " anos");
-}
+var usuario2 = _objectSpread(_objectSpread({}, usuario), {}, {
+  nome: 'Gabriel'
+});
 
-console.log(mostraInfo(usuario));
+console.log(usuario2);
+/* Crie uma vari�vel usuario3 que contenha todos os dados do usu�rio por�m com cidade Lontras. */
+
+var usuario3 = _objectSpread(_objectSpread({}, usuario), {}, {
+  endereco: _objectSpread(_objectSpread({}, usuario.endereco), {}, {
+    cidade: 'Lontras'
+  })
+});
+
+console.log(usuario3);
