@@ -186,7 +186,7 @@ const idade = 23;
 console.log('O usuário ' + usuario + ' possui ' + idade + ' anos');
 ```
 
-- [ ]  7º Exercício
+- [x]  7º Exercício
 
 _Utilize a sintaxe curta de objetos (Object Short Syntax) no seguinte objeto:_
 
