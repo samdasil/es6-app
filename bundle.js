@@ -1,9 +1,18 @@
 "use strict";
 
-// exercicio 6
+// exercicio 7
 
-/* Converta o seguinte trecho de código utilizando Template Literals: */
-var usuario = 'Diego';
+/* Utilize a sintaxe curta de objetos (Object Short Syntax) no seguinte objeto: */
+var nome = 'Diego';
 var idade = 23;
-console.log('O usuário ' + usuario + ' possui ' + idade + ' anos');
-console.log("O usu\xE1rio ".concat(usuario, " possui ").concat(idade, " anos"));
+var usuario = {
+  nome: nome,
+  idade: idade,
+  cidade: 'Rio do Sul'
+};
+var usuario2 = {
+  nome: nome,
+  idade: idade,
+  cidade: 'Rio do Sul'
+};
+console.log(usuario2);
